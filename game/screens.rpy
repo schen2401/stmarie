@@ -215,7 +215,8 @@ screen choice(items):
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
 define config.narrator_menu = True
-
+define gui.choice_button_text_idle_color = "#4d4d4d"
+define gui.choice_button_text_hover_color = "#000000"
 
 style choice_vbox is vbox
 style choice_button is button
@@ -233,6 +234,7 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
+    color "#000000"
 
 
 ## Quick Menu screen ###########################################################
