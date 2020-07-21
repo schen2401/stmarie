@@ -1,5 +1,5 @@
 label sprite_test:
-    show vamp at right
-    mc happy "not pog"
+    show vamp cg1
+    mc smile "not pog"
 
 return

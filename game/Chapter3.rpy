@@ -92,6 +92,15 @@ label Chapter3:
     #% NOTE TO SEAN: make sure to grey out and make the second and third choice unselectable.
     #[MENU]
 
+    # TODO change pass statements to jump to respective routes
+    menu:
+        "Explore the forest: check out that house from yesterday":
+            pass
+        "Head into town: visit the mechanic and look into getting the car fixed" if not demo:
+            pass
+        "Head down to the shore: get your uncle's shop open for business" if not demo:
+            pass
+
 
     narrator """
     Remembering that weird building that I saw the other day on our drive back home, I set my dishes down in the nearby sink and resolve to investigate it.
