@@ -393,11 +393,11 @@ style main_menu_frame:
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
-    xalign 1.0
-    xoffset -20
+    xalign 0.0
+    xoffset 20
     xmaximum 800
-    yalign 1.0
-    yoffset -20
+    yalign 0.0
+    yoffset 20
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)

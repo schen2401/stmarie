@@ -27,7 +27,7 @@ label Chapter1:
     #    e "Once you add a story, pictures, and music, you can release it to the world!"
 
     #   On the Train
-    scene b_interior_1
+    scene b_train_interior_1
 
     icom "\"Attention all passengers: The train will be stopping at Southshore station in just a few minutes. Please make sure to prepare all of your belongings."
 
@@ -105,8 +105,6 @@ label Chapter1:
 
     Catching sight of a large cardboard sign with my name on it and a tiny middle-aged woman almost hidden underneath it, I grin and wave as I make my way over to her.
     """
-
-    show mc
 
     mc "\"Auntie Mildred! How long have you been holding that thing? It’s almost twice your size!\""
 
