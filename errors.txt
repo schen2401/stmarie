@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/sprite_test.rpy", line 2: end of line expected.
-    show mc at bottom left
-                      ^
+File "game/Chapter1.rpy", line 106: invalid syntax
+    renpy.music.queue("audio/INTRO.mp3" fadein=1)
+                                              ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Jul 20 04:21:10 2020
+Wed Jul 22 03:50:20 2020

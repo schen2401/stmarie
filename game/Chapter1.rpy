@@ -29,6 +29,8 @@ label Chapter1:
     #   On the Train
     scene b_train_interior_1
 
+    play music "audio/insidetrain.mp3"
+
     icom "\"Attention all passengers: The train will be stopping at Southshore station in just a few minutes. Please make sure to prepare all of your belongings."
 
     icom "An attendant will be out shortly to confirm your tickets as well as any proper form of identification. Once again, on behalf of everyone here in Travel corp, we thank you for choosing us and wish you some happy traveling!\""
@@ -38,13 +40,13 @@ label Chapter1:
 
     Taking the announcer’s words to heart, I look down at the bag nestled between my feet and shift it side to side to confirm it still being there. I didn’t bring much with me, just a few changes of clothes, a laptop, and some money to hold me over if I needed it.
 
-    Although on second thought, I probably should’ve brought some more stuff. This summer I had planned to move in with my aunt in Arcadia, a small fishing town miles and miles away from the nearest city.
+    Although on second thought, I probably should’ve brought some more stuff. This summer I had planned to move in with my aunt in St. Marie, a small fishing town miles and miles away from the nearest city.
 
-    Now don’t get me wrong, from what I remember the town has quite a few shops so I’m sure I could find most if not anything I could ask for.
+    Now don’t get me wrong, from what I remember, the town has quite a few shop. I’m sure I could find most if not anything I could ask for.
 
-    But last I checked, Arcadia wasn’t the most caught up with the times, its buildings untouched for nearly a century, I wouldn’t be surprised if the latest they have in terms of technology made its debut over forty years ago.
+    But last I checked, St. Marie wasn’t the most caught up with the times, its buildings untouched for nearly a century. I wouldn’t be surprised if the latest they have in terms of technology made its debut over forty years ago.
 
-    I had spent most of my childhood growing up in Arcadia before moving to the city with my parents almost ten years ago.
+    I had spent most of my childhood growing up in St. Marie before moving to the city with my parents almost ten years ago.
 
     We had lived in a small house not too far from my aunt and uncle and would help out with his fishing business on occasion, at least until my dad got a job reassignment.
 
@@ -98,7 +100,11 @@ label Chapter1:
 
 #   Enter the station
     scene b_train_station
-    play music "audio/INTRO.mp3"
+
+    # fadeout train noises fade in intro music
+    stop music fadeout 2.0
+
+    $ renpy.music.queue("audio/INTRO.mp3", fadein=1.0)
 
     narrator """
     The sun is almost blinding as I make my way outside, my eyes needing a few moments in order to properly readjust. Squinting, I try making out the face of my aunt amongst the crowds of moving people.
@@ -115,11 +121,13 @@ label Chapter1:
     aunt "\"Oh shut it, you! I just got here a few minutes ago, and if I don’t make it this big there’s no way you’d ever notice it! You’re a blockhead just like your father.\""
 
     narrator """
-    Laughing at my father and I’s expense, Auntie Elle finally lets go of the massive piece of cardstock. Now face to face, we stand there for a moment in complete silence.
+    Laughing at my father and I’s expense, Auntie Mildred finally lets go of the massive piece of cardstock. Now face to face, we stand there for a moment in complete silence.
 
     I’m stunned, right in front of me is the very same aunt that I had spent so much of my childhood with, yet something was wrong.
 
-    The faintest strands of silvery-white hair spilled from beneath the brim of her sunhat despite Auntie Elle’s best efforts to keep them tucked in; while the faint wrinkles of the laugh lines that had framed the corners of her lips were deepened from growing age and years worth of exposure to the sweltering sun.
+    The faintest strands of silvery-white hair spilled from beneath the brim of her sunhat despite Auntie Mildred’s best efforts to keep them tucked in;
+
+    while the faint wrinkles of the laugh lines that had framed the corners of her lips were deepened from growing age and years worth of exposure to the sweltering sun.
 
     Compared to my parents, my aunt and uncle were older by about ten years, meaning that expecting them to look just as young as I had left them would be ridiculous. I knew this, of course I did, yet that wasn’t all.
 
@@ -130,27 +138,27 @@ label Chapter1:
     Her hands, like the rest of her body, were unnaturally thin, the wiry muscle I remember her having now eroded as the skin that clung onto her bones was almost as oversized as the clothes that clung onto her body.
     """
 
-    aunt "\"Jesus. Just look at you, feels almost like yesterday that you were runnin’ around catching bugs in my backyard, and now here you are, all grown up!\""
+    aunt "\"Jesus. Just look at you, feels almost like yesterday that you were running around catching bugs in my backyard, and now here you are, all grown up!\""
 
     narrator "Auntie Mildred’s voice snaps me back to reality as she looks up at me, her toothy grin still as strong as ever."
 
-    mc "\"Y-Yeah, it’s been a while,” I say as I curse myself under my breath for zoning out again.\""
+    mc "\"Y-Yeah, it’s been a while,\""
 
-    narrator "I say as I curse myself under my breath for zoning out again."
+    narrator "I curse myself under my breath for zoning out again."
 
     aunt "\"Ten years huh?\""
 
     mc "\"Yeah, something like that.\""
 
-    narrator "I scratch my head and take a second to regain my composure before reaching out to grab ahold of Auntie Elle’s hand."
+    narrator "I scratch my head and take a second to regain my composure before reaching out to grab a hold of Auntie Mildred’s hand."
 
     narrator "As we make our way towards the parking lot, I ask, "
 
     mc "\"So uh, did you drive here, or did you take the bus?\""
 
-    aunt "\"Bus? You kiddin’ me? Honey, with how spread out this county is you wouldn’t believe how long it’d take me to get here by bus."
+    aunt "\"Bus? You kidding me? Honey, with how spread out this county is you wouldn’t believe how long it’d take me to get here by bus.\""
 
-    aunt "It takes twenty to thirty minutes just to drive here from Arcadia on my own, now imagine needin’ to stop and pick up some passengers every couple of minutes.\""
+    aunt "\"It takes twenty to thirty minutes just to drive here from St. Marie on my own, now imagine needing to stop and pick up some passengers every couple of minutes.\""
 
     hide aunt
 
@@ -173,7 +181,7 @@ label Chapter1:
     hide aunt
 
     narrator """
-    Those ten years in the city didn't do me any favors when it comes to remembering directions; and compared to just letting my aunt drive, fidgeting with a gps would be a bigger hassle since the reception wasn't always the best around these parts.
+    Those ten years in the city didn't do me any favors when it comes to remembering directions; and compared to just letting my aunt drive, fidgeting with a GPS would be a bigger hassle since the reception wasn't always the best around these parts.
 
     Resigning myself with these conclusions, I just make sure to have Auntie Mildred tell me whenever she wants me to take over the wheel.
 
@@ -208,11 +216,11 @@ label Chapter1:
 
     show aunt
 
-    aunt "\"Nah honey, the closest thing is home and we're still 'bout ten minutes out. Why'd you ask?\""
+    aunt "\"Nah honey, the closest thing is home and we're still about ten minutes out. Why'd you ask?\""
 
     mc "\"Oh. Um, it was nothing really. I just thought I saw something in the woods.\""
 
-    aunt "\"Oooo scary! Best make sure you're a good boy once we get to town else 'ol Red Eyes gets you~\""
+    aunt "\"Oooo scary! Best make sure you're a good boy once we get to town else old Red Eyes gets you~\""
 
     hide aunt
 
@@ -226,11 +234,11 @@ label Chapter1:
 
     show aunt
 
-    mc "\"H-Hey I'm not a kid anymore, that sorta stuff doesn't work on me! And besides, what I saw was a building, not some, thing.\""
+    mc "\"H-Hey I'm not a kid anymore, that sorta stuff doesn't work on me! And besides, what I saw was a building, not something.\""
 
     narrator "Auntie Mildred looks over at my direction for a few moments and shrugs."
 
-    aunt "\"Whole county is pretty old honey, folks don't tend to patch things up till they need to. Wouldn't be surprised if there is a building out there. Maybe one of them old plantations or somethin, we've got a few of those lyin' around."
+    aunt "\"Whole county is pretty old honey, folks don't tend to patch things up till they need to. Wouldn't be surprised if there is a building out there. Maybe one of them old plantations or somethin, we've got a few of those lying around."
 
     hide aunt
 
@@ -239,7 +247,7 @@ label Chapter1:
 
     Auntie Mildred asks me how life in the city was like, how things were going in school, how my family was doing, the basics. Yet I could see how each question ignited a spark of life within my aunt's tired eyes, flitting between me and the road in captivated attention.
 
-    I answer her as best as I can, trying my best to leave out some, unsavoury details. There were some things I wanted to talk about, actually a lot of things, but seeing how happy the act of just talking made her, I didn't want to ruin it.
+    I answer her as best as I can, trying my best to leave out some unsavoury details. There were some things I wanted to talk about, actually a lot of things, but seeing how happy the act of just talking made her, I didn't want to ruin it.
 
     My problems could wait. In return I ask about the town instead, how much it had changed, what was still there, what wasn't, each tiny bit of information unearthing long forgotten memories.
 

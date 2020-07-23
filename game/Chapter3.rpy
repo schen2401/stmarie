@@ -26,6 +26,9 @@ label Chapter3:
 
     And as I stare off towards the horizon, my eyes growing heavy at the sight of crashing waves and the thought of old memories, I hear the heavy ring of a distant clocktower compelling me to sleep.
     """
+
+    $ renpy.music.set_volume(0.5, channel="sound")
+
     play sound "audio/clocktowersounds-short.mp3"
 
     # [TIMESKIP]
@@ -190,11 +193,7 @@ label Chapter3:
     There was someone living in this house.
     """
 
-    show vamp
-
     mystery "\"H-Hello…?\""
-
-    hide vamp
 
     narrator """
     Hearing a voice, I immediately snap out of my thoughts and unclasp my pocket knife.
@@ -202,25 +201,17 @@ label Chapter3:
     Turning around in a panic, I bump into the grandfather clock and am met with the face of a young woman staring back at me from a crack in a doorway, her eyes flinching as the clock comes crashing down behind me.
     """
 
-    show vamp
-
     narrator """
     Seeing my knife, her eyes grow wide as she closes the door, leaving me with the sound of fumbling locks. Realizing my mistake, I quickly stuff my knife back into my pocket and make my way towards the door.
     """
 
     mc "\"No, no! Wait! I’m sorry about the knife! I didn’t think there’d be anyone living here, I thought you’d be like some sort of animal or something.\""
 
-    hide vamp
-
     narrator """
     Stepping on a stray shard of glass and crushing it under my shoe, I wince and look over to the grandfather clock. There was no telling how expensive that thing was.
     """
 
-    show vamp
-
     mc "\"Uh...I’m really sorry about the clock. I can buy you a new on—oh, wait, it’s probably really old huh? I-I’ll fix it for you though! You know, if you want me too…\""
-
-    hide vamp
 
     narrator """
     I’m lying. I don’t know jack shit about fixing clocks. But I mean, it couldn’t hurt to try right?
@@ -248,6 +239,9 @@ label Chapter3:
     This house was in the middle of nowhere. I turn around to face her...
     """
 
+    # can't set above 1? kinda trash tbh
+    $ renpy.music.set_volume(1, channel = "music")
+
     play music "audio/Kevin_MacLeod_-_Erik_Satie_Gymnopedie_No_1.mp3"
 
     show v_cg_1
@@ -255,6 +249,8 @@ label Chapter3:
     mystery "\"Y-You don’t have to worry about the clock or anything...it was already quite old…\""
 
     hide v_cg_1
+
+    show vamp
 
     narrator """
     I see the girl step out of the doorway with trepidation, fidgeting nervously with the sleeves of her dress as she glances down at her feet.
@@ -273,8 +269,6 @@ label Chapter3:
 
     Is she from Jackson? Actually, wait, that would make sense. People from Jackson were always a little weird.
     """
-
-    show vamp
 
     mystery "\"U-Um...are you okay?\""
 
@@ -298,7 +292,7 @@ label Chapter3:
     Scratching the back of my head for a few moments while I try to think of what to say, I shrug and reach out with an outstretched hand while making sure to give the girl some space.
     """
 
-    mc "\"Well...it might be a little too late but I might as well introduce myself. My name’s[insert player name: John]...Uh, what’s yours?\""
+    mc "\"Well...it might be a little too late but I might as well introduce myself. My name’s [player_name]...Uh, what’s yours?\""
 
     mystery "\"...\""
 
@@ -392,7 +386,7 @@ label Chapter3:
     I get up to try and help her but Claire shakes her head and holds up a finger. Settling back down into my seat, she places a hand to her chest and clears her throat.
     """
 
-    show vamp
+    show vamp sad
 
     vamp "\"I-I’m sorry, I wasn’t really expecting that question. Yes, the rabbit is mine.\""
 
@@ -417,8 +411,6 @@ label Chapter3:
     narrator """
     Now I’ve done it. As I kept rambling on, Claire’s face had grown more and more downtrodden.
     """
-
-    hide vamp
 
     narrator """
     Her gaze never parting from her lap and her fidgeting hands, I sigh as I resolve to ask something stupid.
@@ -568,7 +560,7 @@ label Chapter3:
     Upon hearing this I notice Claire’s face brighten up, the corners of her lips curled upwards into a tiny smile as she nods.
     """
 
-    show vamp
+    show vamp happy
 
     vamp "\"Y-Yes, that would be fine.\""
 
@@ -591,12 +583,16 @@ label Chapter3:
     """
 
     scene b_forest2
+    with dissolve
     $renpy.pause(1.0)
     scene b_forest1
+    with dissolve
     $renpy.pause(1.0)
     scene house_exterior
+    with dissolve
     $renpy.pause(1.0)
     scene b_mcroom_dark
+    with dissolve
 
     # BG FOREST2 then BG FOREST1 then BG HOUSE_EXTERIOR, then BG mcROOM(dark)]
 
@@ -654,4 +650,11 @@ label Chapter3:
 
     The sound of the nearby clock tower welcoming me to a night filled with whatever my dreams have in store.
     """
+
+    scene demo_end
+
+    narrator """
+    Thank you for playing! You have reached the end of the demo.
+    """
+
 return

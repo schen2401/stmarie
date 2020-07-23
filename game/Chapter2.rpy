@@ -10,7 +10,10 @@
 
     aunt "\"It’ll just take a second, honey, you don’t need to step out or nothing. I’m just going to get some stuff to make dinner and we’ll be on our way home.\""
 
+    hide aunt
+
     mc "\"Oh, um. Okay?\""
+
     narrator """
     Aunt Mildred leans over the car window to give my shoulder a small reassuring pat before making her way inside, and as I watch her enter the store I notice her lurch on occasion, almost as if merely the act of walking was enough to cause her pain.
 
@@ -52,8 +55,11 @@
 
     Under her care, I had reached a level of confidence that I hadn’t thought possible beforehand, allowing me to ignore all of the mess that was happening with my parents back home, and likewise prompting me to confide in Aunt Mildred for nearly everything.
 
-    To Aunt Mildred—No, to the both of us, honesty was crucial, it was important; and as I jump up to my feet, sick of the crummy bench and beginning to stumble towards the grocery store on numbed legs, I can’t help but wonder what about her health could have been so severe as to warrant her hiding it from me.
+    To Aunt Mildred—No, to the both of us, honesty was crucial, it was important; and as I jump up to my feet, sick of the crummy bench and beginning to stumble towards the grocery store on numbed legs,
+
+    I can’t help but wonder what about her health could have been so severe as to warrant her hiding it from me.
     """
+
     scene b_grocery_interior
 
     narrator """
@@ -84,7 +90,7 @@
 
     mc "\"Wait, really? Aunt Millie, what happened? Is it something that bad? Do you need me to help?\""
 
-    narrator "\"Worried, I start trying to approach her but she holds up a hand and bids me to give her some space.\""
+    narrator "Worried, I start trying to approach her but she holds up a hand and bids me to give her some space."
 
     aunt "\"Honey, I promise that as soon as we get home I’ll explain everything. But for now I just, I just need to settle this thing on my own; and besides, this is your first day back! You shouldn’t spend it all worrying about me!\""
 
@@ -105,7 +111,7 @@
     narrator """
     With that settled, I start making my way towards the door, a warm summer breeze rushing towards my face as I step out onto the streets of St. Marie.
     """
-    scene b_street_corner_2
+    scene b_street_corner_1
 
     narrator """
     Standing in front of the grocery store, I look past the small groups of roving locals as I survey the town, and as my eyes glance over familiar faces and the signs of storefronts I hadn’t seen in years, I could feel a wave of long-forgotten memories wash over me.
@@ -225,7 +231,7 @@
 
     but outside of that Valentino was a very, very prideful man when it came to his food.
 
-    Once he got into one of his moods, he was guaranteed to continue until the end of service, if they were even able to complete one,
+    Once he got into one of his moods, he was guaranteed to continue until the end of service, if he was even able to complete one,
 
     and not wanting any more stress and doubting the speed in which I can get my much-awaited pie, I duck out of the diner almost as quickly as I had made my way in.
     """

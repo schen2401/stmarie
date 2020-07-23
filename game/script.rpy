@@ -9,6 +9,7 @@ define vamp = Character("Claire")
 # flag that sets disabled choices to still show
 define config.menu_include_disabled = True
 
+
 init python:
     if not hasattr(renpy.store, 'gender'):
         gender = "m"
@@ -19,7 +20,7 @@ init python:
 
 # defining sprites
 
-image aunt = "aunt_sprite.png"
+image aunt = Placeholder("girl")
 
 image mmc = im.FactorScale("mmc_neutral.png", mc_scale)
 image fmc = im.FactorScale("fmc_neutral.png", mc_scale)
@@ -58,9 +59,9 @@ image vamp doki = im.FactorScale("v_doki.png", v_scale)
 
 # defining animations
 transform pan_up:
-    yalign 0.6
-    # lerp from y = 1 to y = 0 in 2.5 seconds
-    linear 2.5 yalign 0.0
+    yalign 1.0
+    # lerp from y = 1 to y = 0 in x seconds
+    linear 4.0 yalign 0.0
 
 image vamp cg1:
     im.FactorScale("v_cg_1.png", 0.5)
