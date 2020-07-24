@@ -83,7 +83,7 @@ label Chapter1:
 
     narrator "Punching a hole into the boarding ticket and giving my identification card a quick glance-over, the attendant hands back my things and barely regards me with a tip of his cap."
 
-    attendant "Thank you for your cooperation, have a happy rest of your trip,” as he makes his way towards the other train cars."
+    attendant "\"Thank you for your cooperation, have a happy rest of your trip.\""
 
     narrator """
     After the quick send-off, he makes his way towards the other train cars. Letting out a deep sigh, I recline my head against the back of my seat and shut my eyes in embarrassment.

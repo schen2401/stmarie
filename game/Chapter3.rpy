@@ -24,7 +24,7 @@ label Chapter3:
     narrator """
     Turning on my side to face the nearby window, its thin drapes held open by the passing wind, I’m met with the moon’s silver light as it begins to hover over the ocean’s shore.
 
-    And as I stare off towards the horizon, my eyes growing heavy at the sight of crashing waves and the thought of old memories, I hear the heavy ring of a distant clocktower compelling me to sleep.
+    And as I stare off towards the horizon, my eyes growing heavy at the sight of crashing waves and the thought of old memories, I hear the heavy ring of a distant clock tower compelling me to sleep.
     """
 
     $ renpy.music.set_volume(0.5, channel="sound")
@@ -244,11 +244,11 @@ label Chapter3:
 
     play music "audio/Kevin_MacLeod_-_Erik_Satie_Gymnopedie_No_1.mp3"
 
-    show v_cg_1
+    show vamp cg1
 
     mystery "\"Y-You don’t have to worry about the clock or anything...it was already quite old…\""
 
-    hide v_cg_1
+    hide vamp cg1
 
     show vamp
 
@@ -533,7 +533,7 @@ label Chapter3:
     play sound "audio/clocktowersounds-short.mp3"
 
     narrator """
-    Before having a chance to properly respond, Claire’s voice is drowned out by the heavy toll of a clocktower.
+    Before having a chance to properly respond, Claire’s voice is drowned out by the heavy toll of a clock tower.
     """
 
     hide vamp

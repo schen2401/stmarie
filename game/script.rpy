@@ -61,7 +61,8 @@ image vamp doki = im.FactorScale("v_doki.png", v_scale)
 transform pan_up:
     yalign 1.0
     # lerp from y = 1 to y = 0 in x seconds
-    linear 4.0 yalign 0.0
+    linear 3.5 yalign 0.0
+    pause 3.5
 
 image vamp cg1:
     im.FactorScale("v_cg_1.png", 0.5)

@@ -183,7 +183,7 @@
 
     From what I had heard, it sounded like he was doing okay at first, but the longer his illness went on the weaker and weaker he became, until one day he had to close down his fishing business due to his health,
 
-    and the next, and the next thing he knew he couldn’t even get out of bed anymore.
+    and the next thing he knew he couldn’t even get out of bed anymore.
 
     I tried to visit him once I heard the news, but things back home had gotten so bad that by the time I had finally gotten the chance to see him, it was too late.
 
@@ -257,6 +257,7 @@
 
     aunt "\"No, no, not at all! I just got out of the store a couple of minutes ago.\""
 
+    # TODO change to different bg: street, then road?
     narrator """
     Following me to the car, her voice a lot more relaxed than during our conversation within the grocer’s, she unlocks the door and slips into the driver’s seat beside me.
 
