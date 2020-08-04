@@ -211,11 +211,11 @@ screen choice(items):
         for i in items:
             textbutton i.caption action i.action
 
-
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
 define config.narrator_menu = True
-
+define gui.choice_button_text_idle_color = "#4d4d4d"
+define gui.choice_button_text_hover_color = "#000000"
 
 style choice_vbox is vbox
 style choice_button is button
@@ -233,6 +233,7 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
+    color "#000000"
 
 
 ## Quick Menu screen ###########################################################
@@ -392,11 +393,11 @@ style main_menu_frame:
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
-    xalign 1.0
-    xoffset -20
+    xalign 0.0
+    xoffset 20
     xmaximum 800
-    yalign 1.0
-    yoffset -20
+    yalign 0.0
+    yoffset 20
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)

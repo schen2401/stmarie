@@ -1,17 +1,19 @@
 ﻿label Chapter2:
 
-    narrator "Pulling up onto Main Street, Aunt Mildred stops in front of a small grocery store and steps out of her car.:
-    scene bg b_grocery_exterior
+    narrator "Pulling up onto Main Street, Aunt Mildred stops in front of a small grocery store and steps out of her car."
+
+    scene b_grocery_exterior
 
     narrator "As I begin opening the passenger’s side door to follow her, she stops me with a smile."
 
-    show aunt_sprite
+    show aunt
 
     aunt "\"It’ll just take a second, honey, you don’t need to step out or nothing. I’m just going to get some stuff to make dinner and we’ll be on our way home.\""
 
-    show mc_sprite at left
-    show aunt_sprite at right
+    hide aunt
+
     mc "\"Oh, um. Okay?\""
+
     narrator """
     Aunt Mildred leans over the car window to give my shoulder a small reassuring pat before making her way inside, and as I watch her enter the store I notice her lurch on occasion, almost as if merely the act of walking was enough to cause her pain.
 
@@ -53,9 +55,12 @@
 
     Under her care, I had reached a level of confidence that I hadn’t thought possible beforehand, allowing me to ignore all of the mess that was happening with my parents back home, and likewise prompting me to confide in Aunt Mildred for nearly everything.
 
-    To Aunt Mildred—No, to the both of us, honesty was crucial, it was important; and as I jump up to my feet, sick of the crummy bench and beginning to stumble towards the grocery store on numbed legs, I can’t help but wonder what about her health could have been so severe as to warrant her hiding it from me.
+    To Aunt Mildred—No, to the both of us, honesty was crucial, it was important; and as I jump up to my feet, sick of the crummy bench and beginning to stumble towards the grocery store on numbed legs,
+
+    I can’t help but wonder what about her health could have been so severe as to warrant her hiding it from me.
     """
-    scene bg b_grocery_interior
+
+    scene b_grocery_interior
 
     narrator """
     The automatic doors sliding apart as I make my way inside, I see Aunt Mildred standing at the front counter, seemingly arguing with the cashier.
@@ -63,20 +68,15 @@
     Joining the conversation too late to fully understand what the pair were talking about, I notice her point further down the store towards the pharmacist, its shutters closed with what appeared to be a small paper attached to them.
     """
 
-    show mc_sprite
     mc "\"Aunt Millie, what’s going on?\""
 
     narrator "Upon hearing my voice, Aunt Mildred suddenly stops what she was doing and turns around to face me, seemingly surprised at me being there."
 
-    hide mc_sprite
-    show aunt_sprite
+    show aunt
 
     narrator "Her eyes flit in between the cashier and me in what appears to be a state of embarrassment, causing her to stammer as she tries to find the right words to say."
 
     aunt "\"O-Oh, um, nothing! Nothing’s wrong at all! I-I um, I’m just, waiting on something.\""
-
-    show mc_sprite at left
-    show aunt_sprite at right
 
     mc "\"It looked like the two of you were fighting.\""
 
@@ -90,7 +90,7 @@
 
     mc "\"Wait, really? Aunt Millie, what happened? Is it something that bad? Do you need me to help?\""
 
-    narrator "\"Worried, I start trying to approach her but she holds up a hand and bids me to give her some space.\""
+    narrator "Worried, I start trying to approach her but she holds up a hand and bids me to give her some space."
 
     aunt "\"Honey, I promise that as soon as we get home I’ll explain everything. But for now I just, I just need to settle this thing on my own; and besides, this is your first day back! You shouldn’t spend it all worrying about me!\""
 
@@ -106,13 +106,12 @@
 
     aunt "\"Half an hour, I promise. Cashier says that any longer than that and they’ll start docking the pharmacist’s pay so he’ll be here, I promise.\""
 
-    hide mc_sprite
-    hide aunt_sprite
+    hide aunt
 
     narrator """
     With that settled, I start making my way towards the door, a warm summer breeze rushing towards my face as I step out onto the streets of St. Marie.
     """
-    scene bg b_street_corner_2
+    scene b_street_corner_1
 
     narrator """
     Standing in front of the grocery store, I look past the small groups of roving locals as I survey the town, and as my eyes glance over familiar faces and the signs of storefronts I hadn’t seen in years, I could feel a wave of long-forgotten memories wash over me.
@@ -124,7 +123,7 @@
     Treading the path that we had walked countless times before, I find a memory plastered upon every alley and street corner, reminding me of him and how things used to be.
     """
 
-    scene bg b_street_corner_BLACKWHITE
+    scene b_street_corner_blackwhite
 
     narrator """
     I was almost inseparable from him, wanting to follow him no matter where he went or what he was doing. He had cared for me as if I were his own child, and I had felt safer in his and my Aunt Mildred’s care then I had ever felt back home with my own parents.
@@ -147,8 +146,7 @@
 
     Luckily for the both of us, by the time that the earliest signs of my inpatient temper tantrum began to set in, we would be nearing the outskirts of Main Street and the penultimate stop of our town-wide trip.
     """
-    scene bg diner_exterior_BLACKWHITE
-
+    scene diner_exterior_blackwhite
     narrator """
     There, sitting right next to the local mechanic and right across from the butcher’s was Valentino’s, a small diner nearing the road to the residential areas and home to some of the best pies in town.
 
@@ -160,7 +158,7 @@
 
     and after eating to our heart’s content we would finally make our way to the final stop of our daily trip, the sea.
     """
-    scene bg b_dock_BLACKWHITE
+    scene b_dock_blackwhite
 
     narrator """
     Walking down the road that led to the docks, we would make our ways towards the very edge and watch as the first rays of sunlight finally broke free from underneath the heavy clouds,
@@ -185,7 +183,7 @@
 
     From what I had heard, it sounded like he was doing okay at first, but the longer his illness went on the weaker and weaker he became, until one day he had to close down his fishing business due to his health,
 
-    and the next, and the next thing he knew he couldn’t even get out of bed anymore.
+    and the next thing he knew he couldn’t even get out of bed anymore.
 
     I tried to visit him once I heard the news, but things back home had gotten so bad that by the time I had finally gotten the chance to see him, it was too late.
 
@@ -197,7 +195,7 @@
 
     Closing my eyes, I reach out and touch the water’s surface like my uncle had told me, like my uncle had used to do, and pay my respects to his memory.
     """
-    scene bg b_street_corner_2
+    scene b_street_corner_2
 
     # STOP BGS EMOTIONAL ] don't have this song
 
@@ -210,14 +208,14 @@
 
     Suddenly, the smell of sweet syrup and fresh bread wafting into the air serves to free me of my thoughts as I pass by Valentino’s, my stomach beginning to growl and forcing me to stop.
     """
-    scene bg b_diner_exterior
+    scene b_diner_exterior
 
     narrator """
     It was almost time to head back and Aunt Mildred was supposed to be cooking dinner for tonight, but it’s been at least an hour or two since I’ve come back to St. Marie, and I didn’t really eat anything on the trip over here.
     """
 
     mc "One slice of pie couldn’t hurt...right? I can bring Aunt Millie a slice too!"
-    scene bg b_diner_interior
+    scene b_diner_interior
 
     narrator """
     With this thought, I bound up the stone steps of Valentino’s diner and slip my way inside, my excitement greeted almost instantly by the sound of heavenly accented screaming coming from the kitchen.
@@ -233,34 +231,33 @@
 
     but outside of that Valentino was a very, very prideful man when it came to his food.
 
-    Once he got into one of his moods, he was guaranteed to continue until the end of service, if they were even able to complete one,
+    Once he got into one of his moods, he was guaranteed to continue until the end of service, if he was even able to complete one,
 
     and not wanting any more stress and doubting the speed in which I can get my much-awaited pie, I duck out of the diner almost as quickly as I had made my way in.
     """
-    scene bg b_street_corner_2
+    scene b_street_corner_2
 
     narrator """
     Walking down Main Street back towards the grocery store, I notice Aunt Mildred standing outside of the door, a couple of grocery bags placed down at her feet.
     """
-    scene bg b_street_corner_2  # (cycle through each of these quickly)
-    scene bg b_grocery_exterior
-    scene bg b_street_corner_2
-    scene bg b_grocery_exterior
+
+    scene b_street_corner_1
+    $ renpy.pause(0.5)
+    scene b_grocery_exterior # (cycle through each of these quickly)
 
     narrator """
     Her head turns side to side expectantly, her eyes darting around, looking for something. As soon as she catches sight of me, her face lightens up as she waves me over.
 
     Quickening my pace, I approach her and give her a small hug before scooping up the grocery bags and making my way towards the car.
     """
-    show mc_sprite
 
     mc "\"Hey! I’m sorry auntie, did I keep you waiting long?\""
 
-    show mc_sprite at left
-    show aunt_sprite at right
+    show aunt
 
     aunt "\"No, no, not at all! I just got out of the store a couple of minutes ago.\""
 
+    # TODO change to different bg: street, then road?
     narrator """
     Following me to the car, her voice a lot more relaxed than during our conversation within the grocer’s, she unlocks the door and slips into the driver’s seat beside me.
 
@@ -282,16 +279,16 @@
 
     mc "\"I really hope it doesn’t. This town’s already been through enough change as it is.\""
 
-    hide mc_sprite
-    hide aunt_sprite
+    hide aunt
 
     narrator """
     Looking down at the grocery bags at my feet, the soft plastic shaking slightly underneath the low hum of the car, I notice a tiny paper bag tucked within, a small prescription stapled onto the side of it.
 
     Remembering our conversation back at the grocery store, I look over to my aunt. We still have a few minutes left until we make it to the house anyway, so I figure that now would be as good a time as any.
     """
-    show mc_sprite at left
-    show aunt_sprite at right
+
+    show aunt
+
     mc "\"Hey, Aunt Millie?\""
 
     aunt "\"Yeah, hun?\""
@@ -329,25 +326,24 @@
 
     narrator "The weight of Aunt Mildred’s words settling into my mind, I sit there stunned."
 
-    hide mc_sprite
-    hide aunt_sprite
+    hide aunt
+
     narrator "The thought of having lost my uncle was devastating enough, but now the mere thought of losing my aunt, of losing the last vestige of the childhood I had left behind, of the sense of normalcy I had left behind, is something unimaginable."
 
-    show mc_sprite at left
-    show aunt_sprite at right
+    show aunt
 
     narrator "I don’t want to lose someone else, but now, I don’t have to. Although I wasn’t able to be here for my uncle, I’m able to be here now for Aunt Mildred, and I swear that I’ll do whatever it takes."
 
     mc "\"Don’t worry Aunt Millie, I’ll be here to help you out. Just focus on getting better. You’ll see, with just a little work everything will be back to normal—\""
     # [LOUD ASS CAR NOISE] don't have this yet
 
-    hide mc_sprite
-    hide aunt_sprite
+    hide aunt
+
     narrator """
     And, as if some cosmic entity had lied in wait, plotting for the most opportune time to grant me misfortune, the car suddenly stops moving.
     """
 
-    scene bg house_exterior
+    scene house_exterior
 
     narrator """
     Stuck on the dirt road that serves as our driveway with a check engine light and mere meters away from our destination, I curse my luck under my breath as I get out and circle around towards the back of the car.
@@ -373,13 +369,13 @@
 
     It was through my uncle’s diligence that this ancient piece of machinery in the shape of a car was able to last for so long, but now, my uncle isn’t around anymore to fix it, and what Aunt Mildred and I had just gone through was the first result.
     """
-    show mc_sprite
+
     mc "\"Maybe I should go to visit that mechanic. If his advice worked for my uncle then it should work for me. Right?\""
 
-    hide mc_sprite
+
     narrator "Shaking my head free of that thought, my stomach begins to grumble, compelling me to seek out food as quickly as possible."
 
-    scene bg b_house_interior
+    scene b_house_interior
 
     narrator """
     Eager for my aunt’s upcoming meal, and slightly regretting my decision not to pick up a slice of pie from Valentino’s, I help Aunt Mildred carry her bags alongside my own into the living room.

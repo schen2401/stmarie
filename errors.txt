@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-The label enter_name is defined twice, at
-  File "game/Chapter1.rpy", line 74 and
-  File "game/Chapter2.rpy", line 74.
+File "game/Chapter1.rpy", line 106: invalid syntax
+    renpy.music.queue("audio/INTRO.mp3" fadein=1)
+                                              ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Jul 16 00:35:13 2020
+Wed Jul 22 03:50:20 2020
